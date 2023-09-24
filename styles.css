@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #60939f; 
+}
+
+
+.canvasPage {
+    background-color: tan;
+    border-radius: 20px; 
+	text-align: center;
+}
+
+.htDoc {
+	display: inline-block;
+    border-radius: 20px; 	
+	background-color: red;
+	position: relative;
+	margin: 0 auto;
+}
