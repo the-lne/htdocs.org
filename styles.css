@@ -13,12 +13,21 @@ body {
     background-color: #60939f; 
 }
 
-
 .canvasPage {
 	text-align: center;
 	background-color: tan;
     border-radius: 20px;
 	text-align: center;
+    position: relative;
+
+    animation-name: slideCanvasPage;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+} 
+  
+@keyframes slideCanvasPage {
+  from {top: 3000px;}
+  to {top: 0px;}
 }
 
 .htDoc {
