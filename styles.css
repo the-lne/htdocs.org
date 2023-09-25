@@ -1,3 +1,9 @@
+/**
+ * make canvasPage slide up with css 
+ *
+ * then add a second div 
+ */
+
 body {
     display: flex;
     justify-content: center;
@@ -9,15 +15,16 @@ body {
 
 
 .canvasPage {
-    background-color: tan;
-    border-radius: 20px; 
+	text-align: center;
+	background-color: tan;
+    border-radius: 20px;
 	text-align: center;
 }
 
 .htDoc {
 	display: inline-block;
-    border-radius: 20px; 	
-	background-color: red;
+    border-radius: 20px;
+	background-color: green;
 	position: relative;
 	margin: 0 auto;
 }
