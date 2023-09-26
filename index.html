@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>htdocs.org</title>
-    <link rel="stylesheet" href="styles.css">
+	<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: tan;
+        }
+	</style>
 </head>
 <body onload = "constructor()">
-    <div class="canvasPage" id="canvasPage"></div>
-	<!-- <div class="htDoc" id="htDoc">"hello"</div> -->
-
+	<canvas id="easel"></canvas>
 	<script type="text/javascript" src="constructor.js" defer></script>
 </body>
 </html>
