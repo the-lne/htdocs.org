@@ -1,17 +1,14 @@
 /**		CONSTRUCTOR.JS
- * document overview:
- * misc init-functions are defined in this document above constructor() 
- * 
- * 	init_1() {return}
- * 	init_n() {return}
- * 	...
- * 	constructor() {return}
- * 
- * high level overview:
- * the app is very simple. constructor() is where everything begins, first init 
- * functions are called (which resides in constructor.js) then constructor() 
- * calls main(). main() and all of its related functions reside in app.js.
+ * construct() is where everything begins. 
+ * 		construct()
+ * 		{
+ * 			...
+ * 			initN()
+ * 			app() // resides in ./modules/app.js
+ * 		}
  */
+
+import { app } from "./modules/app.js";
 
 function iteratorPrototype() {
 	/**
@@ -48,13 +45,13 @@ function iteratorPrototype() {
 function setCanvasDimensions() 
 {
 	var canvas = document.querySelector("#easel");
-  	canvas.style.width ='60%';
-  	canvas.style.height='70%';
+  	canvas.style.width ='80%';
+  	canvas.style.height='80%';
   	canvas.width  = canvas.offsetWidth;
   	canvas.height = canvas.offsetHeight;
 }
 
-function constructor() {
+window.onload = function construct() {
 	setCanvasDimensions();
-	main();
+	app();
 }
