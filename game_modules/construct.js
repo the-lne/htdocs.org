@@ -15,7 +15,7 @@ function iteratorPrototype() {
 	 * dynamically set canvas dimensions relative to browser dimensions
 	 */
 
-	const width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0); 
+	const width  = Math.max(document.documentElement.clientWidth  || 0, window.innerWidth  || 0); 
 	const height = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0); 
 
 	var canvasList = [ 
@@ -36,8 +36,8 @@ function iteratorPrototype() {
 
 	for (var i = 0; i < canvasList.length; i++) {
 		var canvas = document.createElement("canvas");
-		canvas.style.width	 = '' + ((width/100)*canvasWidthPercentage[i]) + 'px';
-		canvas.style.height = '' + ((height/100)*canvasHeightPercentage[i]) + 'px';
+		canvas.style.width	 = '' + ((width/100)*canvasWidthPercentage[i]) 	 + 'px';
+		canvas.style.height  = '' + ((height/100)*canvasHeightPercentage[i]) + 'px';
 		document.getElementById(canvasList[i]).appendChild(canvas);
 	}
 }
@@ -45,8 +45,8 @@ function iteratorPrototype() {
 function setCanvasDimensions() 
 {
 	var canvas = document.querySelector("#easel");
-  	canvas.style.width ='80%';
-  	canvas.style.height='80%';
+  	canvas.style.width ='100%';
+  	canvas.style.height='100%';
   	canvas.width  = canvas.offsetWidth;
   	canvas.height = canvas.offsetHeight;
 }
