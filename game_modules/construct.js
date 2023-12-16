@@ -8,7 +8,7 @@
  * 		}
  */
 
-import { app } from "./modules/app.js";
+import { app } from "./app.js";
 
 function iteratorPrototype() {
 	/**

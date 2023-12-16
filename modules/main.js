@@ -1,7 +1,5 @@
-import { spawn } from "./modules/spawner.js";
+import { spawn } from "./spawner.js";
 
 window.onload = function main() {
 	spawn.newPage(spawn.pages.frontpage);
-
-	console.log("homina");
 }
