@@ -11,6 +11,10 @@ class spawner {
 		games: 		document.getElementById("games"),
 		about: 		document.getElementById("about")
 	}
+	panel = {
+		buttonPanelShown: document.getElementById("buttonPanel"),
+		buttonPanelHidden: document.getElementById(".hover-button")
+	}
 	newPage(page) {
 		document.getElementById("easel").src = page;
 	}
@@ -37,7 +41,16 @@ class spawner {
           });
         });
 
+		/*
+        this.panel.buttonPanelHidden.addEventListener('mouseover', event => {
+			document.getElementById("panel").panel.style.display = "block";
+			//this.panel.buttonPanelShown.panel.style.display = "block";
+        });
 
+        this.panel.buttonPanelShown.addEventListener('mouseout', event => {
+			document.getElementById("panel").panel.style.display = "none";
+        });
+		*/
 
         this.button.frontpage.addEventListener('click', event => {
 			this.newPage(this.pages.frontpage);
