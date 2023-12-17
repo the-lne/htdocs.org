@@ -23,7 +23,22 @@ class spawner {
       	iframe.height = iframe.offsetHeight;
 	    iframe.style.borderRadius = "25px";
 
-		// button events
+		// events
+        document.addEventListener("DOMContentLoaded", function () {
+          const button = document.querySelector(".hover-button");
+          const panel = document.getElementById("panel");
+
+          button.addEventListener("mouseover", function () {
+            panel.style.display = "block";
+          });
+
+          button.addEventListener("mouseout", function () {
+            panel.style.display = "none";
+          });
+        });
+
+
+
         this.button.frontpage.addEventListener('click', event => {
 			this.newPage(this.pages.frontpage);
         });
