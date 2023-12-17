@@ -12,8 +12,8 @@ class spawner {
 		about: 		document.getElementById("about")
 	}
 	panel = {
-		buttonPanelShown: document.getElementById("buttonPanel"),
-		buttonPanelHidden: document.getElementById(".hover-button")
+		buttonPanelShown: document.getElementById("panel"),
+		buttonPanelHidden: document.querySelector(".hover-button")
 	}
 	newPage(page) {
 		document.getElementById("easel").src = page;
@@ -28,6 +28,18 @@ class spawner {
 	    iframe.style.borderRadius = "25px";
 
 		// events
+		/*
+        document.addEventListener("DOMContentLoaded", function () {
+          this.panel.buttonPanelHidden.addEventListener("mouseover", function () {
+            this.panel.buttonPanelShown.style.display = "block";
+          });
+          this.panel.buttonPanelShown.addEventListener("mouseout", function () {
+            this.panel.buttonPanelHidden.style.display = "none";
+          });
+        });
+		*/
+
+		/* 
         document.addEventListener("DOMContentLoaded", function () {
           const button = document.querySelector(".hover-button");
           const panel = document.getElementById("panel");
@@ -36,21 +48,26 @@ class spawner {
             panel.style.display = "block";
           });
 
-          button.addEventListener("mouseout", function () {
+          panel.addEventListener("mouseout", function () {
             panel.style.display = "none";
           });
         });
+		*/
 
 		/*
         this.panel.buttonPanelHidden.addEventListener('mouseover', event => {
-			document.getElementById("panel").panel.style.display = "block";
-			//this.panel.buttonPanelShown.panel.style.display = "block";
+			//document.getElementById("panel").panel.style.display = "block";
+			this.panel.buttonPanelHidden.panel.style.display = "block";
         });
 
         this.panel.buttonPanelShown.addEventListener('mouseout', event => {
-			document.getElementById("panel").panel.style.display = "none";
+			//document.getElementById("panel").panel.style.display = "none";
+			this.panel.buttonPanelShown.panel.style.display = "none";
         });
 		*/
+
+
+
 
         this.button.frontpage.addEventListener('click', event => {
 			this.newPage(this.pages.frontpage);
