@@ -11,17 +11,19 @@ class spawner {
 		games: 		document.getElementById("games"),
 		about: 		document.getElementById("about")
 	}
+	/*
 	panel = {
 		buttonPanelShown: document.getElementById("panel"),
 		buttonPanelHidden: document.querySelector(".hover-button")
 	}
+	*/
 	newPage(page) {
 		document.getElementById("easel").src = page;
 	}
 	constructor() {
 		// sizing the iframe id="easel"
 	    var iframe = document.querySelector("#easel");
-      	iframe.style.width  = '90%';
+      	iframe.style.width  = '95%';
       	iframe.style.height = '96%';
       	iframe.width  = iframe.offsetWidth;
       	iframe.height = iframe.offsetHeight;

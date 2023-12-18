@@ -50,18 +50,18 @@
     </script>
   -->
 
+    <!-- has the mouse entered id="jpanelClass"? -->
     <script> 
       $(document).ready(function(){
-        $("#jpanel").mouseenter(function(){
+        $(".jpanelClass").mouseenter(function(){
           $("#jpanel").animate( 
             { width: 170},
             { duration: 900 }
           );
         });
-        //$("#jpanel").animate( { width: 20 });
       });
     </script>
-
+    <!-- has the mouse entered id="easel"? -->
     <script>
       $(document).ready(function(){
         $("#easel").mouseenter(function(){
@@ -72,8 +72,14 @@
         });
       });
     </script>
+    <!-- make jpajel collapse when the site starts -->
     <script>
-      $("#jpanel").animate( { width: 20 });
+      $(document).ready(function(){
+        $("#jpanel").animate( 
+          { width: 20 }, 
+          { duration: 900}
+          );
+      });
     </script>
     
 
@@ -86,7 +92,7 @@
     <!-- this is the div that is invisible and detects mouseenter mouseleave -->
     <!-- <div id="invisible-detect" style="position:absolute;height:80vh;width:10vh;left:0px;"> -->
     <!-- <div id="invisible-box" style="position:absolute;height:80vh;width:10vh;left:0px;"> -->
-      <div id="jpanel" style="background:#9f6ddc;height:80vh;width:40vh;position:relative;border-radius:25px;">
+      <div class="jpanelClass" id="jpanel" style="background:#9f6ddc;height:80vh;width:40vh;position:relative;border-radius:25px;float:left;">
         <div class="jpanel-div" style="position:absolute;left:0px;height:100vh;">
           <ul>
             <button class="button" id="frontpage">index</button>
@@ -99,6 +105,6 @@
    <!-- </div> -->
    <!-- </div> -->
 
-    <iframe id="easel" src="about:blank" frameBorder="0" scrolling="no"></iframe>
+    <iframe id="easel" src="about:blank" frameBorder="0" scrolling="no" style="float:right;"></iframe>
   </body>
 </html>
