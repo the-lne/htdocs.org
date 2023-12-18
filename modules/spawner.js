@@ -21,7 +21,7 @@ class spawner {
 	constructor() {
 		// sizing the iframe id="easel"
 	    var iframe = document.querySelector("#easel");
-      	iframe.style.width  = '85%';
+      	iframe.style.width  = '90%';
       	iframe.style.height = '96%';
       	iframe.width  = iframe.offsetWidth;
       	iframe.height = iframe.offsetHeight;

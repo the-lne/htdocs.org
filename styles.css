@@ -24,6 +24,7 @@ button {
   background: transparent;
   border: 2px solid rgb(0, 0, 0);
   cursor: pointer;
+  border-radius: 25px;
 } 
 
 button:hover {
@@ -40,43 +41,16 @@ ul {
 }
 
 /*
-.bubble-btn {
-  background-color: #008CBA;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  padding: 20px 40px;
-  font-size: 16px;
-  position: relative;
-  transition: transform 0.3s;
-}
-
-.hover-container {
-  position: relative;
-}
-
-.hover-button {
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.panel {
-  display: none;
+.jpanel-div {
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  left: 0px;
 }
 
-.box-transparent {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(100, 100, 100, 0.6);
-    padding: 20px;
+.jpanel {
+  background:#9f6ddc;
+  height:80vh;
+  width:40vh;
+  position:relative;
+  border-radius:25px;
 }
 */

@@ -5,51 +5,100 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>htdocs.org</title>
     <link rel="icon" type="image/png" href="https://htdocs.org/favicon.png"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://htdocs.org/styles.css">
     <script type="module" src="https://htdocs.org/modules/main.js" defer></script>                   
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!--
     <script> 
       $(document).ready(function(){
         $("#jpanel").mouseenter(function(){
           $("#jpanel").animate( {
-            width: 100
+            width: 170
           });
+          setTimeout(() => {}, 900);
         });
         $("#jpanel").mouseleave(function(){
           $("#jpanel").animate( {
             width: 20
           });
+          setTimeout(() => {}, 900);
         });
         $("#jpanel").animate( { width: 20 });
       });
     </script>
+    -->
+    <!--
+    <script> 
+      $(document).ready(function(){
+        $("#jpanel").mouseenter(function(){
+          $("#jpanel").animate( 
+            { width: 170},
+            { duration: 900 }
+          );
+        });
+        $("#jpanel").mouseleave(function(){
+          $("#jpanel").animate( 
+            { width: 20 },
+            { duration: 900 }
+          );
+        });
+        $("#jpanel").animate( { width: 20 });
+      });
+    </script>
+  -->
+
+    <script> 
+      $(document).ready(function(){
+        $("#jpanel").mouseenter(function(){
+          $("#jpanel").animate( 
+            { width: 170},
+            { duration: 900 }
+          );
+        });
+        //$("#jpanel").animate( { width: 20 });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $("#easel").mouseenter(function(){
+          $("#jpanel").animate( 
+            { width: 20 },
+            { duration: 900 }
+          );
+        });
+      });
+    </script>
+    <script>
+      $("#jpanel").animate( { width: 20 });
+    </script>
+    
+
+
+
 
   </head>
   <body>
 
-    <div id="jpanel" style="background:#9f6ddc;height:80vh;width:20vh;position:relative;border-radius:25px;">
-      <ul>
-        <button class="button" id="frontpage">index</button>
-        <button class="button" id="downloads">downloads</button>
-        <button class="button" id="games">games</button>
-        <button class="button" id="about">about</button>
-      </ul>
-    </div>
-
-<!--
-    <div class="hover-container">
-      <div class="hover-button">nice</div>
-        <div class="panel" id="panel">
-          <button class="button" id="frontpage">index</button>
-          <button class="button" id="downloads">downloads</button>
-          <button class="button" id="games">games</button>
-          <button class="button" id="about">about</button>
+    <!-- this is the div that is invisible and detects mouseenter mouseleave -->
+    <!-- <div id="invisible-detect" style="position:absolute;height:80vh;width:10vh;left:0px;"> -->
+    <!-- <div id="invisible-box" style="position:absolute;height:80vh;width:10vh;left:0px;"> -->
+      <div id="jpanel" style="background:#9f6ddc;height:80vh;width:40vh;position:relative;border-radius:25px;">
+        <div class="jpanel-div" style="position:absolute;left:0px;height:100vh;">
+          <ul>
+            <button class="button" id="frontpage">index</button>
+            <button class="button" id="downloads">downloads</button>
+            <button class="button" id="games">games</button>
+            <button class="button" id="about">about</button>
+          </ul>
         </div>
-    </div>
- -->
+      </div>
+   <!-- </div> -->
+   <!-- </div> -->
 
-    <iframe class="button" id="easel" src="about:blank" frameBorder="0" scrolling="no"></iframe>
+    <iframe id="easel" src="about:blank" frameBorder="0" scrolling="no"></iframe>
   </body>
 </html>
