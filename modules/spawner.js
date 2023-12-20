@@ -6,16 +6,14 @@
 
 class spawner {
 	pages = {
-		frontpage:	"pages/frontpage.html",
-		download:	"pages/downloads.html",
+        about:      "pages/about.html",
         games:      "pages/games.html",
-        about:      "pages/about.html"
+		download:	"pages/downloads.html"
 	}
 	button = {
-		frontpage: 	document.getElementById("frontpage"),
-		download: 	document.getElementById("downloads"),
+		about: 		document.getElementById("about"),
 		games: 		document.getElementById("games"),
-		about: 		document.getElementById("about")
+		download: 	document.getElementById("downloads")
 	}
 	newPage(page) {
 		document.getElementById("easel").src = page;
@@ -47,17 +45,14 @@ class spawner {
 		});
 
 		// add event listeners to the buttons to make them load different iframes
-        this.button.frontpage.addEventListener('click', event => { 
-			this.newPage(this.pages.frontpage);
-		});
-        this.button.download.addEventListener('click', event => { 
-			this.newPage(this.pages.download); 	
+        this.button.about.addEventListener('click', event => { 
+			this.newPage(this.pages.about); 
 		});
         this.button.games.addEventListener('click', event => { 
 			this.newPage(this.pages.games);
 		});
-        this.button.about.addEventListener('click', event => { 
-			this.newPage(this.pages.about); 
+        this.button.download.addEventListener('click', event => { 
+			this.newPage(this.pages.download); 	
 		});
 	} 
 }
