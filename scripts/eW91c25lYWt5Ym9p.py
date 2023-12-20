@@ -1,6 +1,10 @@
 #!/bin/python3
-print("hello world")
+
+# crontab script
 
 import os
-cmd = 'ls -l'
-os.system(cmd)
+
+# https://github.com/the-lne/mwIII_2023-psbb
+os.system('cd /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/ && git pull origin main;'
+          'cp /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/randomMovement.py /var/www/html/htdocs.org/downloads/;'
+          'cp /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/slightlysmarterbot.py /var/www/html/htdocs.org/downloads/')
