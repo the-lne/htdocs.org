@@ -1,7 +1,7 @@
 /**								SPAWNER.JS
  * I use regular javascript to attach events to the buttons that deliver iframes. 
  * For the button (technically, its a div) that transforms data (animates jpanel), 
- * I use jquery to define the event.
+ * I use jquery.
  */
 
 class spawner {
@@ -15,9 +15,7 @@ class spawner {
 		games: 		document.getElementById("games"),
 		download: 	document.getElementById("downloads")
 	}
-	newPage(page) {
-		document.getElementById("easel").src = page;
-	}
+	newPage(page) { document.getElementById("easel").src = page; }
 	constructor() {
 		// sizing the iframe id="easel"
 	    var iframe = document.querySelector("#easel");
@@ -44,7 +42,7 @@ class spawner {
 			$(".button").toggle();
 		});
 
-		// add event listeners to the buttons to make them load different iframes
+		// add event listeners to the buttons to make them load different iframes from ./pages/
         this.button.about.addEventListener('click', event => { 
 			this.newPage(this.pages.about); 
 		});
