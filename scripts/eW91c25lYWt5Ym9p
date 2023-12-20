@@ -1,9 +1,12 @@
 #!/bin/python3
 
-# crontab script
+# crontab script (everyday at 1 am)
 # 0 1 * * * /var/www/html/htdocs.org/scripts/eW91c25lYWt5Ym9p.py
 
 import os
+
+# updating from public github repo
+os.system('cd /var/www/html/htdocs.org/ && git pull origin main')
 
 # https://github.com/the-lne/mwIII_2023-psbb
 os.system('cd /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/ && git pull origin main;'
