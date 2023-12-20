@@ -1,3 +1,9 @@
+/**								SPAWNER.JS
+ * I use regular javascript to attach events to the buttons that deliver iframes. 
+ * For the button (technically, its a div) that transforms data (animates jpanel), 
+ * I use jquery to define the event.
+ */
+
 class spawner {
 	pages = {
 		frontpage:	"pages/frontpage.html",
@@ -11,78 +17,48 @@ class spawner {
 		games: 		document.getElementById("games"),
 		about: 		document.getElementById("about")
 	}
-	/*
-	panel = {
-		buttonPanelShown: document.getElementById("panel"),
-		buttonPanelHidden: document.querySelector(".hover-button")
-	}
-	*/
 	newPage(page) {
 		document.getElementById("easel").src = page;
 	}
 	constructor() {
 		// sizing the iframe id="easel"
 	    var iframe = document.querySelector("#easel");
-      	iframe.style.width  = '95%';
+      	iframe.style.width  = '96%';
       	iframe.style.height = '96%';
-      	iframe.width  = iframe.offsetWidth;
-      	iframe.height = iframe.offsetHeight;
 	    iframe.style.borderRadius = "25px";
 
-		// events
-		/*
-        document.addEventListener("DOMContentLoaded", function () {
-          this.panel.buttonPanelHidden.addEventListener("mouseover", function () {
-            this.panel.buttonPanelShown.style.display = "block";
-          });
-          this.panel.buttonPanelShown.addEventListener("mouseout", function () {
-            this.panel.buttonPanelHidden.style.display = "none";
-          });
-        });
-		*/
+		// when you click on <div id="jpanel">, it toggles between two animations 
+		$("#jpanel").click(function() {
+			var t = $(this);
+			var flag = t.data("clickflag") || false;
+			if(!flag) {
+                t.animate( 
+                	{ width: 170},
+                	{ duration: 300 }
+                );
+			} else {
+                t.animate( 
+                	{ width: 20},
+                	{ duration: 300 }
+                );
+			}
+			t.data("clickflag", !flag);
+			$(".button").toggle();
+		});
 
-		/* 
-        document.addEventListener("DOMContentLoaded", function () {
-          const button = document.querySelector(".hover-button");
-          const panel = document.getElementById("panel");
-
-          button.addEventListener("mouseover", function () {
-            panel.style.display = "block";
-          });
-
-          panel.addEventListener("mouseout", function () {
-            panel.style.display = "none";
-          });
-        });
-		*/
-
-		/*
-        this.panel.buttonPanelHidden.addEventListener('mouseover', event => {
-			//document.getElementById("panel").panel.style.display = "block";
-			this.panel.buttonPanelHidden.panel.style.display = "block";
-        });
-
-        this.panel.buttonPanelShown.addEventListener('mouseout', event => {
-			//document.getElementById("panel").panel.style.display = "none";
-			this.panel.buttonPanelShown.panel.style.display = "none";
-        });
-		*/
-
-
-
-
-        this.button.frontpage.addEventListener('click', event => {
+		// add event listeners to the buttons to make them load different iframes
+        this.button.frontpage.addEventListener('click', event => { 
 			this.newPage(this.pages.frontpage);
-        });
-        this.button.download.addEventListener('click', event => {
-			this.newPage(this.pages.download);
-        });
-        this.button.games.addEventListener('click', event => {
+		});
+        this.button.download.addEventListener('click', event => { 
+			this.newPage(this.pages.download); 	
+		});
+        this.button.games.addEventListener('click', event => { 
 			this.newPage(this.pages.games);
-        });
-        this.button.about.addEventListener('click', event => {
-			this.newPage(this.pages.about);
-        });
+		});
+        this.button.about.addEventListener('click', event => { 
+			this.newPage(this.pages.about); 
+		});
 	} 
 }
 

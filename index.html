@@ -6,105 +6,23 @@
     <title>htdocs.org</title>
     <link rel="icon" type="image/png" href="https://htdocs.org/favicon.png"/>
     <link rel="stylesheet" href="https://htdocs.org/styles.css">
-    <script type="module" src="https://htdocs.org/modules/main.js" defer></script>                   
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-    <!--
-    <script> 
-      $(document).ready(function(){
-        $("#jpanel").mouseenter(function(){
-          $("#jpanel").animate( {
-            width: 170
-          });
-          setTimeout(() => {}, 900);
-        });
-        $("#jpanel").mouseleave(function(){
-          $("#jpanel").animate( {
-            width: 20
-          });
-          setTimeout(() => {}, 900);
-        });
-        $("#jpanel").animate( { width: 20 });
-      });
-    </script>
-    -->
-    <!--
-    <script> 
-      $(document).ready(function(){
-        $("#jpanel").mouseenter(function(){
-          $("#jpanel").animate( 
-            { width: 170},
-            { duration: 900 }
-          );
-        });
-        $("#jpanel").mouseleave(function(){
-          $("#jpanel").animate( 
-            { width: 20 },
-            { duration: 900 }
-          );
-        });
-        $("#jpanel").animate( { width: 20 });
-      });
-    </script>
-  -->
-
-    <!-- has the mouse entered id="jpanelClass"? -->
-    <script> 
-      $(document).ready(function(){
-        $(".jpanelClass").mouseenter(function(){
-          $("#jpanel").animate( 
-            { width: 170},
-            { duration: 900 }
-          );
-        });
-      });
-    </script>
-    <!-- has the mouse entered id="easel"? -->
-    <script>
-      $(document).ready(function(){
-        $("#easel").mouseenter(function(){
-          $("#jpanel").animate( 
-            { width: 20 },
-            { duration: 900 }
-          );
-        });
-      });
-    </script>
-    <!-- make jpajel collapse when the site starts -->
-    <script>
-      $(document).ready(function(){
-        $("#jpanel").animate( 
-          { width: 20 }, 
-          { duration: 900}
-          );
-      });
-    </script>
-    
-
-
-
-
+    <script type="module" src="https://htdocs.org/modules/main.js" defer></script>                   
   </head>
   <body>
+    <div class="jpanelClass" id="jpanel">
+        <ul>
+          <button class="button" id="frontpage">index</button>
+          <button class="button" id="downloads">downloads</button>
+          <button class="button" id="games">games</button>
+          <button class="button" id="about">about</button>
 
-    <!-- this is the div that is invisible and detects mouseenter mouseleave -->
-    <!-- <div id="invisible-detect" style="position:absolute;height:80vh;width:10vh;left:0px;"> -->
-    <!-- <div id="invisible-box" style="position:absolute;height:80vh;width:10vh;left:0px;"> -->
-      <div class="jpanelClass" id="jpanel" style="background:#9f6ddc;height:80vh;width:40vh;position:relative;border-radius:25px;float:left;">
-        <div class="jpanel-div" style="position:absolute;left:0px;height:100vh;">
-          <ul>
-            <button class="button" id="frontpage">index</button>
-            <button class="button" id="downloads">downloads</button>
-            <button class="button" id="games">games</button>
-            <button class="button" id="about">about</button>
-          </ul>
-        </div>
-      </div>
-   <!-- </div> -->
-   <!-- </div> -->
+          <div class="button-wrapper" data-tippy-content="Click to copy button 50">
+            <button class="button-50" role="button">Button 50</button>
+          </div>
 
-    <iframe id="easel" src="about:blank" frameBorder="0" scrolling="no" style="float:right;"></iframe>
+        </ul>
+    </div>
+    <iframe id="easel" src="about:blank" frameBorder="0" scrolling="no"></iframe>
   </body>
 </html>
