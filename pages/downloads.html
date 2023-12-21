@@ -2,11 +2,34 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://htdocs.org/pages/styles.css">
   </head>
   <body>
-    <p>
-      To download things, type 'curl -LO htdocs.org/downloads/codmw3smarterbot.py'
-    </p>
+    <ul>
+      <h1 id="downloads-h1">Downloads</h1>
+      <div>
+        <p id="downloads-p" class="downloads-page"> 
+          Multiple downloads are hosted/mirrored here. Either clicking a file's 
+          respective download button or 'curl -LO htdocs.org/downloads/filename.extension' 
+          are sufficient ways for downloading.
+        </p>
+        <div id="downloads-list" class="downloads-page">
+          <a id="downloads-a" class="download-links" href="https://htdocs.org/downloads/randomMovement.py">
+            randomMovement.py
+            </a>
+          <a id="downloads-a">and</a>
+          <a id="downloads-a" class="download-links" href="https://htdocs.org/downloads/slightlysmarterbot.py">
+            slightlysmarterbot.py
+            </a>
+          <a id="downloads-a">
+            are python bots who use the win32api and pynput modules to simulate userinput 
+            in slightly different ways. randomMovement uses pseudorandom integers, and 
+            slightlysmarterbot compares the floating point integer representations of colors
+            from specific coordinants on the screen between two screenshots to decided when 
+            to submit pseudorandomized input. Deps not listed.
+          </a>
+        </div>
+      </div>
+    </ul>
   </body>
 </html>

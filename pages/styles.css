@@ -6,19 +6,60 @@ body {
     margin: 0;
     background-color: rgb(0, 0, 0);
 }
-h1 {
+
+/** about.html */
+#about-h1 {
+  padding-top: 3vh;
   text-align: center;
   color: white;
 }
-p {
+#about-p {
   text-align: center;
   color: white;
+}
+.about-page {
+  font-size: x-large;
+  padding-top: 5vh;
+  padding-right: 5vh;
+  padding-bottom: 2vh;
+  padding-left: 5hv+20px;
 }
 
-#about-paragraph {
+/** downloads.html */
+.downloads-page {
   font-size: x-large;
-  padding-top: 50px;
-  padding-right: 80px;
-  padding-bottom: 50px;
-  padding-left: 60px;
+  padding-top: 20vh;
+  padding-right: 20vh;
+  padding-bottom: 20vh;
+  padding-left: 3hv+20px;
+}
+#downloads-h1 {
+  padding-top: 3vh;
+  text-align: center;
+  color: white;
+}
+#downloads-p {
+  text-align: center;
+  color: white;
+}
+#downloads-a {
+  text-align: center;
+  color: white;
+}
+.downloads-page {
+  font-size: x-large;
+  padding-top: 5vh;
+  padding-right: 5vh;
+  padding-bottom: 2vh;
+  padding-left: 5hv+20px;
+}
+#downloads-list {
+  display:inline-block;
+}
+.download-links {
+  text-decoration: none;
+}
+.download-links:hover {
+  text-decoration: none;
+  background-color: blue;
 }
