@@ -9,7 +9,7 @@ class spawner {
         about:      "pages/about.html",
         games:      "pages/games.html",
 		download:	"pages/downloads.html",
-		space:		"https://www.youtube.com/watch?v=P9C25Un7xaM&ab_channel=NASA"
+		space:		"https://www.youtube.com/embed/P9C25Un7xaM?si=cGx7lQdo8RPAbfm-&autoplay=1"
 	}
 	button = {
 		about: 		document.getElementById("about"),
