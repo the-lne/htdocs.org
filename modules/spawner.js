@@ -9,13 +9,15 @@ class spawner {
         about:      "pages/about.html",
         games:      "pages/games.html",
 		download:	"pages/downloads.html",
-		space:		"https://www.youtube.com/embed/P9C25Un7xaM?si=cGx7lQdo8RPAbfm-&autoplay=1"
+		iss1:		"https://www.youtube.com/embed/P9C25Un7xaM?si=cGx7lQdo8RPAbfm-&autoplay=1",
+		iss2:		"https://www.youtube.com/embed/jPTD2gnZFUw?si=ceLoqtTsPb2YTOSb&autoplay=1"
 	}
 	button = {
 		about: 		document.getElementById("about"),
 		games: 		document.getElementById("games"),
 		download: 	document.getElementById("downloads"),
-		space: 		document.getElementById("space")
+		iss1: 		document.getElementById("iss1"),
+		iss2: 		document.getElementById("iss2")
 	}
 	newPage(page) { document.getElementById("easel").src = page; }
 	constructor() {
@@ -54,8 +56,11 @@ class spawner {
         this.button.download.addEventListener('click', event => { 
 			this.newPage(this.pages.download); 	
 		});
-        this.button.space.addEventListener('click', event => { 
-			this.newPage(this.pages.space); 	
+        this.button.iss1.addEventListener('click', event => { 
+			this.newPage(this.pages.iss1); 	
+		});
+        this.button.iss2.addEventListener('click', event => { 
+			this.newPage(this.pages.iss2); 	
 		});
 	} 
 }
