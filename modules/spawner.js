@@ -8,12 +8,14 @@ class spawner {
 	pages = {
         about:      "pages/about.html",
         games:      "pages/games.html",
-		download:	"pages/downloads.html"
+		download:	"pages/downloads.html",
+		space:		"https://www.youtube.com/watch?v=P9C25Un7xaM&ab_channel=NASA"
 	}
 	button = {
 		about: 		document.getElementById("about"),
 		games: 		document.getElementById("games"),
-		download: 	document.getElementById("downloads")
+		download: 	document.getElementById("downloads"),
+		space: 		document.getElementById("space")
 	}
 	newPage(page) { document.getElementById("easel").src = page; }
 	constructor() {
@@ -51,6 +53,9 @@ class spawner {
 		});
         this.button.download.addEventListener('click', event => { 
 			this.newPage(this.pages.download); 	
+		});
+        this.button.space.addEventListener('click', event => { 
+			this.newPage(this.pages.space); 	
 		});
 	} 
 }

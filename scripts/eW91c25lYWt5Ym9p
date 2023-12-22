@@ -10,9 +10,9 @@ import os
 os.system('cd /var/www/html/htdocs.org/ && git pull origin main')
 
 # https://github.com/the-lne/mwIII_2023-psbb
-os.system('cd /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/ && git pull origin main;'
-          'cp /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/randomMovement.py /var/www/html/htdocs.org/downloads/;'
-          'cp /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/slightlysmarterbot.py /var/www/html/htdocs.org/downloads/')
+os.system('cd /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/ && git pull origin main;')
+os.system('cp /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/randomMovement.py /var/www/html/htdocs.org/downloads/;')
+os.system('cp /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/slightlysmarterbot.py /var/www/html/htdocs.org/downloads/')
 
 # of course, add some more repos to the bunch, create a pretty download page
 # setup some sort of database where users can access content (possibly for the downloads page)
