@@ -61,5 +61,33 @@ body {
 }
 .download-links:hover {
   text-decoration: none;
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
+}
+.iss-class {
+  border-radius: 25px;
+  padding-top: 5vh;
+  padding-right: 5vh;
+  padding-bottom: 10vh;
+  padding-left: 5hv+20px;
+}
+#iss-cam1 {
+  float:left;
+}
+#iss-cam2 {
+  float:right;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #272727;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+::-webkit-scrollbar-button {
+  background-color: #000000;
 }

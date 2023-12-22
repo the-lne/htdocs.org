@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://htdocs.org/pages/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <ul>
+      <h1 id="about-h1">livestreams</h1>
+      <div>
+        <h2 id="about-h1">International Space Station</h2>
+        <iframe id="iss-cam1" class="iss-class" src="https://www.youtube.com/embed/P9C25Un7xaM?si=cGx7lQdo8RPAbfm-&mute=1&autoplay=1&showinfo=0&controls=1&autohide=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+        <iframe id="iss-cam2" class="iss-class" src="https://www.youtube.com/embed/jPTD2gnZFUw?si=ceLoqtTsPb2YTOSb&mute=1&autoplay=1&showinfo=0&controls=1&autohide=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      </div>
+      <div>
+        <h2 id="about-h1">Chinese News</h2>
+        <iframe id="iss-cam1" class="iss-class" src="https://www.youtube.com/embed/9sE12tg3CmA?si=cXVXtLxhQBbK2IWk&mute=1&autoplay=1&showinfo=0&controls=1&autohide=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+        <iframe id="iss-cam2" class="iss-class" src="https://www.youtube.com/embed/Hpxf37X12Tg?si=HMvZm-N5xiyKXlAH&mute=1&autoplay=1&showinfo=0&controls=1&autohide=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      </div>
+      <div>
+        <h2 id="about-h1">Wildlife</h2>
+        <iframe id="iss-cam1" class="iss-class" src="https://www.youtube.com/embed/KyQAB-TKOVA?si=JI4Q3Dkjz9FtdOmY&mute=1&autoplay=1&showinfo=0&controls=1&autohide=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+        <iframe id="iss-cam2" class="iss-class" src="https://www.youtube.com/embed/StGk_2DA5ig?si=dlwUnHYj_O1B-qTl&mute=1&autoplay=1&showinfo=0&controls=1&autohide=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+      </div>
+    </ul>
+    <script>
+      $('.iss-class').css('height',$(window).height()/2-25+'px');
+      $('.iss-class').css('width', $(window).width()/2-25+'px');
+    </script>
+  </body>
+</html>
