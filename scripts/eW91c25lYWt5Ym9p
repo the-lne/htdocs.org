@@ -17,7 +17,3 @@ os.system('cd /var/www/html/htdocs.org/repos/github/ && git clone https://github
 os.system('cp /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/randomMovement.py /var/www/html/htdocs.org/downloads/;')
 os.system('cp /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/slightlysmarterbot.py /var/www/html/htdocs.org/downloads;')
 os.system('rm -rf /var/www/html/htdocs.org/repos/github/mwIII_2023-psbb/')
-
-# of course, add some more repos to the bunch, create a pretty download page
-# setup some sort of database where users can access content (possibly for the downloads page)
-# graphql is for api's but backends of websites have apis too right?
